@@ -1,0 +1,36 @@
+Kellys-MBP:mystuff kellybrower$ irb
+irb(main):001:0> require "./ex25.rb"
+=> true
+irb(main):002:0> sentence = "All good things come to those who wait."
+=> "All good things come to those who wait."
+irb(main):003:0> words = Ex25.break_words(sentence)
+=> ["All", "good", "things", "come", "to", "those", "who", "wait."]
+irb(main):004:0> words
+=> ["All", "good", "things", "come", "to", "those", "who", "wait."]
+irb(main):005:0> sorted_words = Ex25.sort_words(words)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):006:0> sorted_words
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):007:0> Ex25.print_first_word(words)
+All
+=> nil
+irb(main):008:0> Ex25.print_last_word(words)
+wait.
+=> nil
+irb(main):009:0> words
+=> ["good", "things", "come", "to", "those", "who"]
+irb(main):010:0> sorted_words
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):011:0> sorted_words = Ex25.sort_sentence(sentence)
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):012:0> sorted_words
+=> ["All", "come", "good", "things", "those", "to", "wait.", "who"]
+irb(main):013:0> Ex25.print_first_and_last(sentence)
+All
+wait.
+=> nil
+irb(main):014:0> Ex25.print_first_and_last_sorted(sentence)
+All
+who
+=> nil
+irb(main):015:0> 
